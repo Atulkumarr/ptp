@@ -1,0 +1,499 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Petemoss&display=swap");
+
+* {
+  margin: 0px;
+  text-decoration: none;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  /* transition: 0.2s ease-in;
+  -webkit-transition: 0.2s ease-in; */
+  list-style: none;
+  font-family: "Raleway", sans-serif;
+}
+html,
+body {
+  font-size: 18px;
+  scroll-behavior: smooth;
+  background-color: #f8f8f8;
+  height: 100%;
+}
+/* classes used frequently */
+.fix-width {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0px 5px;
+}
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* for product section hover */
+.hover-div {
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  padding: 0.4rem;
+  background-color: #fea700;
+}
+.hide-img {
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+  top: 0.4rem;
+  left: 0.4rem;
+  width: 96.3%;
+  height: 88.5%;
+  opacity: 0;
+}
+.hover-div:hover .hide-img {
+  opacity: 1;
+}
+
+/* navigation */
+nav {
+  background-color: white;
+}
+
+/* top-contact */
+nav .top-contact::before {
+  content: "";
+  width: 90px;
+  height: 100%;
+  background-color: #fea700;
+  position: absolute;
+  left: -57px;
+  top: -26px;
+  transform: rotate(49deg);
+}
+nav .top-contact {
+  background-color: #fea700;
+  width: 60%;
+  position: absolute;
+  right: 0px;
+  padding: 0.8rem 2.4rem;
+  top: 0px;
+  display: flex;
+  justify-content: space-between;
+}
+nav .top-contact a {
+  color: white;
+  font-size: 0.7rem;
+}
+nav .top-contact i {
+  margin-right: 0.4rem;
+}
+/* nav */
+.navigation {
+  padding-top: 3rem;
+}
+.brand {
+  width: 8%;
+}
+.brand img {
+  width: 100%;
+  border-radius: 50%;
+}
+.navigation ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 55%;
+}
+.navigation ul li a {
+  color: #fea700;
+  margin-right: 8px;
+  font-size: 0.9rem;
+  position: relative;
+}
+.navigation ul li a::after,
+.navigation ul li a::before {
+  content: "";
+  background-color: #fea700;
+  position: absolute;
+  left: 0px;
+  height: 2px;
+  width: 0%;
+  bottom: 0px;
+  transition: 0.3s ease-in;
+}
+.navigation ul li a::before {
+  right: 0px;
+  width: 0%;
+  left: unset;
+  top: -1px;
+}
+.navigation ul li a:hover::after,
+.navigation ul li a:hover::before {
+  width: 100%;
+}
+/* banner starts */
+.banner {
+  position: relative;
+}
+.banner .item {
+  width: 100%;
+}
+
+/* about */
+.about {
+  padding: 3rem 0;
+  background-color: #fafaff;
+}
+
+.about .about-img {
+  width: 45%;
+}
+.about .about-img img {
+  width: 100%;
+}
+.about .about-text {
+  width: 50%;
+}
+.yellow-text {
+  color: #fea700;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.7rem;
+}
+.bold-yellow {
+  color: #fea700;
+  font-style: 800;
+}
+.about .about-text h2 {
+  margin-bottom: 0.2rem;
+}
+.about .about-text p {
+  margin: 0.4rem 0;
+  color: #fea700;
+  font-family: "Petemoss", cursive;
+  font-size: 1.4rem;
+}
+.about .about-text .details {
+  color: black;
+  font-family: "Raleway", sans-serif;
+  font-size: 0.9rem;
+}
+.btn {
+  margin-top: 0.5rem;
+  display: block;
+  color: #fea700;
+  transition: 0.3s ease-in-out;
+}
+.btn span {
+  transition: 0.3s ease-in-out;
+}
+.btn:hover span {
+  margin-left: 10px;
+}
+
+/* product */
+.product {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: #303030;
+}
+
+.product p {
+  color: white;
+}
+.heading-text {
+  margin-bottom: 1.2rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+/* wall mount */
+
+.wall-mount {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  width: 100%;
+}
+.product h1 {
+  background-color: #fff;
+  padding: 0.5rem 0rem 0.5rem 0.5rem;
+  margin-bottom: 1rem;
+}
+.wall-mount p {
+  margin-top: 0.8rem;
+  text-align: center;
+}
+
+.wall-mount .wallmount-item .hide-img {
+  width: 96.3%;
+  height: 88.5%;
+}
+/* wall-mount owl slider */
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel button.owl-dot {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #fea700;
+}
+
+.wall-mount-slider .owl-nav {
+  margin-top: 10px;
+  position: absolute;
+  top: -4.2rem;
+  right: 20px;
+}
+.owl-theme .owl-nav [class*="owl-"]:hover {
+  background: none;
+  color: inherit;
+}
+/* .owl-theme .owl-nav .disabled {
+  cursor: not-allowed;
+} */
+/*marketing  materials */
+.marketing-material .marketing {
+  margin-bottom: 1rem;
+  width: 31%;
+  text-align: center;
+}
+.marketing-material .marketing img {
+  width: 100%;
+}
+.marketing-material .marketing .hide-img {
+  width: 96%;
+  height: 90%;
+}
+/* sticker */
+.sticker-box {
+  width: 30%;
+}
+.sticker-box img {
+  width: 100%;
+}
+.sticker-box .hide-img {
+  background-color: #fff;
+  width: 95%;
+  height: 90%;
+}
+/* architectural */
+.architectural h1 {
+  margin-top: 1rem;
+}
+.architectural-box {
+  width: 31%;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.architectural-box img {
+  width: 100%;
+}
+.architectural-box .hide-img {
+  width: 96%;
+  height: 99%;
+  top: -0.7rem;
+}
+
+/* product list */
+.product-box {
+  width: 22%;
+  margin: 1.2rem 0rem;
+  padding: 0.5rem;
+  background-color: #fea700;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+.product-box img {
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.product-box .product-img {
+  position: relative;
+}
+.product-box .product-img img:nth-child(2) {
+  position: absolute;
+  left: 0px;
+}
+
+.product-box .product-img .rotate:hover {
+  transform: rotate(5deg);
+}
+.product-box .product-img .rotate-revers:hover {
+  transform: rotate(-5deg);
+}
+
+.product-box h2 {
+  color: white;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 0.6rem;
+  cursor: pointer;
+}
+.product-box:hover {
+  transform: scale(1.1);
+}
+
+/* product-last-section */
+
+.product-last-section {
+  margin-top: 1rem;
+}
+
+.product-last-section .img-box {
+  width: 31%;
+}
+
+.product-last-section .img-box img {
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+.product-last-section .img-box img:hover {
+  box-shadow: 0px 0px 4px #dbdbdb;
+}
+
+/* contact */
+.contact {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.contact .contact-info {
+  width: 45%;
+  margin-top: 1.5rem;
+}
+.contact .contact-info form input {
+  width: 80%;
+  height: 38px;
+  outline: none;
+  font-size: 0.8rem;
+  margin-bottom: 0.9rem;
+  border: none;
+  box-shadow: 0px 10px 5px -6px rgb(204 204 204);
+  padding-left: 10px;
+}
+.contact .contact-info form button {
+  padding: 13px 31px;
+  background-color: #fea700;
+  border: none;
+  border-radius: 21px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: white;
+  letter-spacing: 1px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+/* removing the up down arrow from input type number */
+.contact-info input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.contact .contact-info .rounded {
+  background-color: #fea700;
+  border-bottom-right-radius: 71px;
+  border-top-left-radius: 71px;
+  padding: 61px 1%;
+  justify-content: space-evenly;
+  color: white;
+  box-shadow: 0px 10px 5px -6px rgb(204 204 204);
+  position: relative;
+}
+.contact .contact-info .rounded::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-bottom-right-radius: 71px;
+  border-top-left-radius: 71px;
+  border: 1.1px solid #fea700;
+  top: -30px;
+  left: 6%;
+  z-index: -10;
+}
+.contact .contact-info .rounded .icon {
+  width: 30%;
+  text-align: end;
+}
+.contact .contact-info .rounded .icon i {
+  transform: rotate(-45deg);
+  font-size: 3rem;
+}
+.contact .contact-info .rounded .rounded-text {
+  width: 61%;
+}
+.contact .contact-info .rounded h1 {
+  font-size: 0.9rem;
+}
+.contact .contact-info .rounded a {
+  font-size: 1.8rem;
+  color: white;
+}
+.contact .contact-info p {
+  margin-top: 1rem;
+  color: #595959;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+.contact .contact-info p span {
+  margin-top: 1rem;
+  color: #757474;
+  margin-left: 3%;
+  font-weight: 600;
+}
+
+/* footer */
+
+footer {
+  background-color: #303030;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: white;
+}
+footer .extra-width {
+  width: 40%;
+}
+footer .footer-box {
+  width: 28%;
+}
+footer .footer-box h1 {
+  position: relative;
+  margin-bottom: 1.6rem;
+}
+footer .footer-box h1::after {
+  content: "";
+  width: 70px;
+  height: 4px;
+  background-color: #fea700;
+  position: absolute;
+  bottom: -0.7rem;
+  left: 0px;
+}
+.flex-start {
+  align-items: flex-start;
+}
+footer .footer-box p {
+  font-size: 0.86rem;
+  line-height: 1.3rem;
+}
+footer .footer-box a {
+  color: white;
+  font-size: 0.86rem;
+  margin-top: 1rem;
+  display: block;
+  transition: all 0.3s ease-in-out;
+}
+footer .footer-box a:hover {
+  color: #fea700;
+}
+footer .footer-contact a {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+/* todo list 
+1. banner 4-5 pages
+2. whatsapp link
+*/
